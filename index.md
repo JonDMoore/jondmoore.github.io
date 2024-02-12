@@ -1,46 +1,65 @@
----
-#
-# Here you can change the text shown in the Home page before the Latest Posts section.
-#
-# Edit jekyll-theme-simple-blog's home layout in _layouts instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-#
-layout: home
-permalink: /index.html
-header:
-  image: /assets/img/home-header.jpg
-tagline: > # this means to ignore newlines until "repository:"
-  Write an awesome description for your new site here. You can edit this
-  line in index.md. It will appear in your document head meta (for
-  SEO optimization) and in your feed.xml site description.
-excerpt: >
-  Write an awesome description for your new site here. You can edit this
-  line in index.md. It will appear in your document head meta (for
-  SEO optimization) and in your feed.xml site description.
-repository:
-  is_project_page: true
-  show_downloads: true
-  repository_url: https://gitlab.com/lorepirri/jekyll-theme-simple-blog
-  zip_url: https://gitlab.com/lorepirri/jekyll-theme-simple-blog/repository/master/archive.zip
-  tar_url: https://gitlab.com/lorepirri/jekyll-theme-simple-blog/repository/master/archive.tar.gz
-ref: home
-lang: en
----
+-----------------------------------------------------------------------------
+github     : https://github.com/casualwriter/casual-markdown-blog
+title      : Casual-Markdown's Blog 
+subtitle   : Simple is the best
+nav-group  : featured, new-3, tags, months
+nav-width  : 320px
+css-header : background:linear-gradient(to bottom right, #06c, #fc0); color:white
+menu       : 
+   Home    : ?
+   github  : https://github.com/casualwriter/casual-markdown-blog
+   Dark    : javascript:darkmode()
+   About   : ?page=about.md
+-----------------------------------------------------------------------------
+<style comment="additional style">
+#header { {{css-header}}  }
+#left-panel  { width:{{nav-width}} }
+#right-panel { left: calc({{nav-width}} + 20px) }
+h1 { border-bottom:1px dotted grey }
+.nav-post a  { color: teal }
+.nav-tag  a  { color: #06c }
+.nav-month a { color: grey }
+.post-date   { font-size:12px; font-weight:400; }
+.post-title  { font-size:16px; color:#333 }
+.post-tags   { left-margin:20px; padding:4px; font-size:10px; color:green; font-weight:400 }
+</style>
 
-Simple Blog Theme is a clean, responsive blogging theme for Jekyll. It is inspired by the Cayman Blog Theme.
+<div id="md-post">
+# Featured
 
-This theme has all you need to start today blogging with Jekyll, and no effort: pages, posts, few social buttons. Try loading this on mobile too.
+## [Build online resume by markdown](20220927-markdown-as-resume.md)
+> ![markdown resume](http://casualwriter.github.io/casual-markdown/casual-markdown-cv.png)
+> date:2022/09/27, tags: `#markdown`
+> 
+> build blog site by markdown files in minutes.
+> host on github, or other static web hosting  
 
-Have a look at the Github page for more information.
+## [Markdown as blog](20220820-markdown-as-blog.md)
+> ![build blog site by markdown files](campo01.jpg)
+> date:2022/08/20, tags: `#markdown`
+> 
+> build blog site by markdown files in minutes.
+> host on github, or other static web hosting  
 
-You find this descriptive text in the `index.md` file, so you can change it, or remove it completely, according to your needs.
 
-<h1>Latest Articles</h1>
-<div>&nbsp;</div>
-{% include list-category-posts.html lang=page.lang category="articles" max_posts=3 max_post_tags=3 %}
+# Archives
 
----
+### Sep 2022
 
-<h1>Latest Projects</h1>
-<div>&nbsp;</div>
-{% include list-category-posts.html lang=page.lang category="projects" max_posts=3 max_post_tags=3 %}
+* 2022/09/28: [Build online resume by markdown](20220927-markdown-as-resume.md) { #markdown }
+   
+### Aug 2022
+                    
+* 2022/08/20: [Markdown as blog](20220820-markdown-as-blog.md) { #markdown, #featured }
+* 2022/08/10: [Is RegExp readable?](20220810-is-regexp-readable.md) { #regexp }
+
+### July 2022
+                    
+* 2022/07/31: [release of casual-markdown v0.90](20220731-casual-markdown-v0.90.md) { #markdown, #regexp }
+
+### Oct 2021
+
+* 2021/10/28: [Portable lightweight web crawler](20211028-powerpage-web-crawler.md) { #powerpage }
+* 2021/10/05: [Develop html application by PowerPage](20211005-powerpage-0.60.md) { #powerpage }
+
+</div>
