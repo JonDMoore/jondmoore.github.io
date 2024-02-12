@@ -7,7 +7,7 @@
 #
 layout: home
 permalink: /index.html
-header: > Jon Moore
+header:
   image: /assets/img/home-header.jpg
 tagline: > # this means to ignore newlines until "repository:"
   Write an awesome description for your new site here. You can edit this
