@@ -1,12 +1,12 @@
 # Site settings
-title: My Jekyll Demo Site
-email: amandavisconti@gmail.com
+title: Jon D Moore
+email: ReadReadRead19@gmail.com
 description: > 
-  My site for demonstrating how to build a Jekyll website hosted on GitHub Pages, built for a Programming Historian lesson.
+  My personal website
 baseurl: /
 url: https://www.jondmoore.org
-twitter_username: literature_geek
-github_username:  amandavisconti
+twitter_username: LutheranNerd
+github_username:  JonDMoore
 
 # Build settings
 markdown: kramdown
