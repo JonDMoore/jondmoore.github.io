@@ -4,12 +4,12 @@ Example:
     https://www.convertonline.io/convert/json-to-query-string
 */
 const defaultValues = {
-    "name": "Erick Wendel",
-    "profession": "Node.js Instructor",
-    "email": "ei@dude.com",
+    "name": "Jon D Moore",
+    "profession": "Lay Deacon and Writer",
+    "email": "readreadread19@gmail.com",
     "phone": "+447795001178",
-    "website": "cursos.erickwendel.com",
-    "location": "São Paulo, SP"
+    "website": "jondmoore.org",
+    "location": "The LowCountry"
 }
 
 function getQueryString() {
