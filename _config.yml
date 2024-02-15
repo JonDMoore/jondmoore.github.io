@@ -6,7 +6,7 @@ title: 'Jon D Moore'
 description: 'LCMS Lay-Deacon'
 
 # Images
-avatar: 'pfp.jpg'
+avatar:
 background: 'background.jpg'
 favicon: 'favicon.ico'
 
