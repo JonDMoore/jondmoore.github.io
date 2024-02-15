@@ -1,81 +1,79 @@
-<div align="center">
+# Cover Card landing page theme
 
-  # Chirpy Jekyll Theme
+## Quick set-up
 
-  A minimal, responsive, and feature-rich Jekyll theme for technical writing.
+1. [Use this template](https://github.com/epidrome/cover-card/generate)
+2. Edit the `_config.yml` with your online presence accounts and upload a background and an avatar image
+3. Go to the `Settings` tab, then select `Pages` from the sidebar, and find (gh-pages branch) your new home page link
 
-  [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy?color=brightgreen)][gem]&nbsp;
-  [![CI](https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml/badge.svg?branch=master&event=push)][ci]&nbsp;
-  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/4e556876a3c54d5e8f2d2857c4f43894)][codacy]&nbsp;
-  [![GitHub license](https://img.shields.io/github/license/cotes2020/jekyll-theme-chirpy.svg)][license]&nbsp;
-  [![996.icu](https://img.shields.io/badge/link-996.icu-%23FF4D5B.svg)](https://996.icu)
+## Dependencies
 
-  [**Live Demo** →][demo]
+This theme is based on [jekyll](https://jekyllrb.com/) and [jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme). These dependencies are natively supported by [Github Pages](https://pages.github.com/), which should build and deploy your site as soon as you make any change to your files. The theme is also based on the icons from [Font Awesome](https://fontawesome.com/). 
 
-  [![Devices Mockup](https://chirpy-img.netlify.app/commons/devices-mockup.png)][demo]
+## Motivation
 
-</div>
+Create a cover page for your social media profiles, host it for free on Github Pages, and maintain it in minutes, not hours. 
 
-## Features
+I understand that a jekyll theme without a blog might sound like a self contradiction, but jekyll has also motivated something even more useful than itself: seamless hosting with Github Pages. 
 
-- Dark / Light Theme Mode
-- Localized UI language
-- Pinned Posts on Home Page
-- Hierarchical Categories
-- Trending Tags
-- Table of Contents
-- Last Modified Date
-- Syntax Highlighting
-- Mathematical Expressions
-- Mermaid Diagrams & Flowcharts
-- Dark / Light Mode Images
-- Embed Videos
-- Disqus / Giscus / Utterances Comments
-- Built-in Search
-- Atom Feeds
-- PWA
-- Google Analytics / GoatCounter
-- SEO & Performance Optimization
+This theme takes advantage of both jekyll and Github Pages, in order to create something similar to [linktree](https://linktr.ee), [about.me](https://about.me/) and [carrd](https://carrd.co), but without the price tag.
 
-## Documentation
+In addition to the official demo link, here is one more [demo from my home page](https://github.com/epidrome/home).
 
-To learn how to use, develop, and upgrade the project, please refer to the [Wiki][wiki].
+This theme is ideal for people or organizations who are busy enjoying their life or business and who want a simple business card for their online presence.
 
-## Contributing
+Please keep this README file because it contains the credits at the end and it might become handy after you have completely forgoten the set-up instructions.
 
-Contributions (_pull requests_, _issues_, and _discussions_) are what make the open-source community such an amazing place
-to learn, inspire, and create. Any contributions you make are greatly appreciated.
-For details, see the "[Contributing Guidelines][contribute-guide]".
+## Design rationale
+
+The design rationale of this theme is to do less than other themes: "Less is more"
+
+The majority (99%) of the availabe jekyll themes offers a blog, but I have never been able to keep blog content (or its technology) updated over time.
+
+Let's be honest with ourselves: How does an (abandoned) blog centered web site look to new visitors if we have not posted since two years ago?
+
+## Make it yours
+
+[Fork this repository](https://github.com/epidrome/cover-card/fork) and edit the files to your liking: As a first step, you may want to replace the images and edit the `_config.yml` with your online profiles. You can test the result almost in real-time at the `Github Pages` section in the Settings tab (gh-pages branch).
+
+### Avatar or Logo
+
+The avatar image should be square and at least 200 pixels. Chances are that you have a selfie somewhere in your media storage. If you are making a page for a business or product, then use a logo.
+
+### Background image sets the mood
+
+There is no aspect ratio requirement for the background image, but it should be big enough for contemporary (desktop, tablet, phone) computer displays and dark enough in order to work for the white foreground text and icons.
+
+### Social profiles
+
+Edit the `_config.yml` file with your social media profiles by adding the respective account name, according to the documentation and comments inside that file. You can delete or comment out the social media that you don't need. Since v04, you can also control the order of your social media accounts. Moreover, you can add new media accounts and choose the icon.
+
+### Domain name
+
+Github Pages supports free custom domain names, so it is worth buying a domain name and fill it in `Custom domain` field at the settings. If you want to use the theme with you user page (ie. username.github.io), then delete (or rename) your `master branch` and rename your `gh-branch` to `master` [#13](https://github.com/epidrome/cover-card/issues/13)
+
+### Working example
+
+In addition to the configuration file in this repository, you can also [inspect a modified example of the legacy configuration file](https://github.com/epidrome/home/tree/0f333b28688a7a2e5eb84df768c277a03848d228), which is using the *legacy version* of the theme. Moreover, you can inspect a [custom (icons, links) example of the *current version*](https://github.com/epidrome/home).
+
+### Updates
+
+Please note that the theme is currently in beta, so some updates at the [master branch](https://github.com/epidrome/cover-card/tree/master) might break your site. Don't panic! 
+
+If you wish to keep your theme frozen and not receive updates, then you can [revert your remote_theme to the last known good configuration](https://github.com/benbalter/jekyll-remote-theme):
+
+> You may also optionally specify a branch, tag, or commit to use by appending an @ and the Git ref (e.g., epidrome/cover-card@v0.3). If you don't specify a Git ref, the master branch will be used.
+
+Please note that currently Github Pages seems to build your site only when you make a local change. This means that the theme might get updated but you will not receive the updated version unless you make a local change in your forked repository.
+
+You can always visit [releases](https://github.com/epidrome/cover-card/releases) for new features and check [issues](https://github.com/epidrome/cover-card/issues) for major bugs.
+
+### Expert options
+
+You can find and locally overide advanced options (e.g., font, image, and icon styles) for this theme in the documentation (readme) at the [master branch](https://github.com/epidrome/cover-card/tree/master).
 
 ## Credits
 
-### Contributors
+This page is based on the [cover-card jekyll remote theme](https://github.com/epidrome/cover-card/tree/master).
 
-Thanks to [all the contributors][contributors] involved in the development of the project!
-
-[![all-contributors](https://contrib.rocks/image?repo=cotes2020/jekyll-theme-chirpy&columns=16)][contributors]
-<sub> —— Made with [contrib.rocks](https://contrib.rocks)</sub>
-
-### Third-Party Assets
-
-This project is built on the [Jekyll][jekyllrb] ecosystem and some [great libraries][lib], and is developed using [VS Code][vscode] as well as tools provided by [JetBrains][jetbrains] under a non-commercial open-source software license.
-
-The avatar and favicon for the project's website are from [ClipartMAX][clipartmax].
-
-## License
-
-This project is published under [MIT License][license].
-
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[ci]: https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml?query=event%3Apush+branch%3Amaster
-[codacy]: https://app.codacy.com/gh/cotes2020/jekyll-theme-chirpy/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade
-[license]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE
-[jekyllrb]: https://jekyllrb.com/
-[clipartmax]: https://www.clipartmax.com/middle/m2i8b1m2K9Z5m2K9_ant-clipart-childrens-ant-cute/
-[demo]: https://cotes2020.github.io/chirpy-demo/
-[wiki]: https://github.com/cotes2020/jekyll-theme-chirpy/wiki
-[contribute-guide]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/docs/CONTRIBUTING.md
-[contributors]: https://github.com/cotes2020/jekyll-theme-chirpy/graphs/contributors
-[lib]: https://github.com/cotes2020/chirpy-static-assets
-[vscode]: https://code.visualstudio.com/
-[jetbrains]: https://www.jetbrains.com/?from=jekyll-theme-chirpy
+Background photo by Anders Jildén and avatar photo by Ayo Ogunseinde, both on [Unsplash](https://unsplash.com/)
