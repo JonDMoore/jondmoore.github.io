@@ -2,11 +2,11 @@
 remote_theme: epidrome/cover-card@main
 
 # Title and tag line
-title: 'My name'
-description: 'I am amazing.'
+title: 'Jon D Moore'
+description: 'LCMS Lay-Deacon'
 
 # Images
-avatar: 'avatar.jpg'
+avatar: 'avatar.png'
 background: 'background.jpg'
 favicon: 'favicon.ico'
 
