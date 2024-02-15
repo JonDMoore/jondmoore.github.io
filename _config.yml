@@ -1,8 +1,7 @@
 # Site settings
 title: Jon D Moore
 email: ReadReadRead19@gmail.com
-description: > 
-  My personal website
+description: 
 baseurl: /
 url: https://www.jondmoore.org
 twitter_username: LutheranNerd
