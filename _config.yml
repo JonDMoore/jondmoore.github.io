@@ -123,6 +123,7 @@ social-links:
 
   - name: medium
     url-pattern: medium.com/@readreadread19
+    icon-class: fab fa-2x fa-medium
 
   #name: tumblr
    # url-pattern: __USERNAME__.tumblr.com
@@ -139,7 +140,7 @@ social-links:
 
   - name: telegram
     url-pattern: telegram.me/jondmoore
-
+    icon-class: fab fa-2x fa-telegram
   #name: snapchat
    # url-pattern: snapchat.com/add/__USERNAME__
 
