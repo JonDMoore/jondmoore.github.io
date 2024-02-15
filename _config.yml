@@ -35,7 +35,7 @@ medium:  'ReadReadRead19'
 email: 'readreadread19@gmail.com'
 #messenger: 'myfbchat'
 
-social-links-order: [github-user, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, vk, weibo, dribbble, messenger, blog_url, email]
+social-links-order: [twitter, youtube, medium, telegram, email]
 
 # Yaml manifest of supported social links
 # Requirements:
