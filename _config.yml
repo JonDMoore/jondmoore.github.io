@@ -1,25 +1,58 @@
 title: Jon D Moore
-author: Jonathon Moore
-subtitle: Thoughts on tech, conservatism, & theology 
+email: your-email@example.com
+name: Your name
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here.
+keywords: [Your keywords]
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+domain: "example.com" # the domain name for your site, e.g. example.com
+language: en
 
-url: "https://jonDmoore.org"
-baseurl: "/jonDmoore"
+analytics:   # the Google Analytics property ID, e.g. UA-XXXXX-Y
 
-footer_only_homepage: true
-footer_url: "https://github.com/rhl-bthr"
-footer_text: "Theme by rhl-bthr"
+paginate: 25
+paginate_path: "/page:num/"
 
-profile-picture: assets/profile.png
-favicon_location: assets/favicon.ico
+comments: false  # enable comments
+disqus:          # disqus account
 
-permalink: /:year-:month-:day-:title/
+mathjax: true # Mathematics
+mermaid: true # Diagrams
+
+permalink: /:year/:month/:day/:title
+
 sass:
-    style: compressed
-    sass_dir: css
+  sass_dir: _sass
+  style: expanded # compressed, compact, expanded or compressed
 
-navbar:
- - name: "About"
-   link: "about"
- - name: "Blog"
-   link: "blog"
+# Category settings
+jekyll-archives:
+  enabled: 
+    - categories
+    - tags
+  layout: archive
+  permalinks:
+    category: /category/:name/
+    tag: /tag/:name/
 
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-archives
+  - jekyll-seo-tag
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
