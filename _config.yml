@@ -1,42 +1,24 @@
-title: "TradCon Jon"
-author: "Jonathon Moore"
-description: "My thoughts on technology, conservatism, and Lutheran theology" # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+title: Parchment
+author: pro-panda
+subtitle: The life of a frustrated engineer
 
-# Email / Social media user names used by the minima theme:
-# All of these are optional and can be removed or commented out
-email: "example@mail.com"
-twitter_username: "twitteruser"
-github_username: "githubuser"
-linkedin_username: "linkedinuser"
-#facebook_username: username
-#flickr_username: username
-#instagram_username: username
-#pinterest_username: username
-#youtube_username: username
-#googleplus_username: +username
+url: "https://rahulbothra.com"
+baseurl: "/parchment"
 
-#########################################################################################
-######### Nothing below needs to be changed (unless you know what you're doing) #########
-#########################################################################################
-theme: "minima"
+footer_only_homepage: true
+footer_url: "https://github.com/rhl-bthr"
+footer_text: "Theme by rhl-bthr"
 
-rss: rss
+profile-picture: assets/profile.png
+favicon_location: assets/favicon.ico
 
-kramdown:
-  syntax_highlighter_opts:
-    disable: true
-    
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
+permalink: /:year-:month-:day-:title/
+sass:
+    style: compressed
+    sass_dir: css
 
-titles_from_headings:
-  strip_title: true
-  collections: true
-
-defaults:
-  - scope:
-      path: ""
-      type: post
-    values:
-      tags: Other
+navbar:
+ - name: "About"
+   link: "about"
+ - name: "Resume"
+   absolute-link: "https://rahulbothra.com/cv.pdf"
