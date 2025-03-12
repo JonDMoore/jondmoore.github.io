@@ -1,35 +1,24 @@
-<head>
-    {% if page.title %}
-        {% assign title = page.title | append: " - " | append: site.title %}
-        {% assign desc = page.subtitle %}
-    {% else %}
-        {% assign title = site.title %}
-        {% assign desc = site.subtitle %}
-    {% endif %}
-    {% assign sitedir = site.url | append: site.baseurl | append: "/" %}
-    {% assign favicon_location = sitedir | append: site.favicon_location %}
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+{% seo %}
+{% if site.keywords or page.tags %}
+<meta name="keywords" content="{% if page.tags %}{{ page.tags | join: ','}}{% else %}{{ site.keywords | join: ',' }}{% endif %}" />
+{% endif %}
+<link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" />
+<link rel="apple-touch-icon" href="{{ site.baseurl }}/favicon.ico"/>
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/base.css" />
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/highlight.css" />
 
-    <title>{{ title }}</title>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="blog, {{ site.author }}, {{ site.title }}, jekyll">
-    <meta name="author" content="{{ site.author }}">
-
-    <meta name="description" content="{{ desc }}">
-    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ sitedir }}css/main.css">
-    <link rel="icon" type="image/ico" href="{{ favicon_location }}">
-    <link rel="shortcut-icon" type="image/ico" href="{{ favicon_location }}">
-
-    <!-- For Facebook -->
-    <meta property="og:title" content="{{ title }}" />
-    <meta property="og:image" itemprop="image" content="{{ favicon_location }}" />
-    <meta property="og:description" content="{{ desc }}" />
-
-    <!-- For Twitter -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="{{ title }}" />
-    <meta name="twitter:description" content="{{ desc }}" />
-    <meta name="twitter:image" content="{{ favicon_location }}" />
-</head>
+<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+{% if site.analytics %}{% include analytics.html %}{% endif %}
+{% if site.mathjax %}
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async ></script>
+{% endif %}
+{% if site.mermaid %}
+<script src="{{ site.baseurl }}/assets/script/jekyllpaper.js" async ></script>
+<script src="https://unpkg.com/mermaid@8.5.1/dist/mermaid.min.js" onload="javascript:loadMermaid();" async></script>
+{% endif %}
