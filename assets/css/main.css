@@ -98,14 +98,16 @@ img {
   display: block;
   margin: 0 auto; }
 
-div {
-    position: absolute;
-    left: 0px;
-    height: 100%;
-    width: 100px;
-    background: #222222;
-    top: 0px;
-    bottom: 0px
+body {
+    background: var(--background-color);
+    color: var(--foreground-color);
+    font-family: monospace;
+    max-width: 40em;
 }
+
+table {
+    border-spacing: 1em 0px;
+}
+
 
 /*# sourceMappingURL=main.css.map */
