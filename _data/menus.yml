@@ -1,0 +1,12 @@
+- default: menu_index
+  url:   ""
+
+- default: menu_category
+  url:   "category"
+
+- title: "Jon D Moore"
+  absoluteUrl: true
+  url: "JonDmoore.org"
+
+- default: menu_about
+  url:   "about"
