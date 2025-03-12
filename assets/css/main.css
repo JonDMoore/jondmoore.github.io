@@ -98,4 +98,14 @@ img {
   display: block;
   margin: 0 auto; }
 
+div {
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 100px;
+    background: #222222;
+    top: 0px;
+    bottom: 0px
+}
+
 /*# sourceMappingURL=main.css.map */
