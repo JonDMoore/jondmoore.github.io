@@ -155,10 +155,7 @@ social-links:
     url-scheme: 'mailto:'
     url-pattern: '__USERNAME__'
     icon-class: far fa-2x fa-envelope-open
-
-- name: Home
-  link: /
-- name: About
-  link: /about.html
-- name: Blog
-  link: /blog.html
+    
+  - name: Blog
+    url-pattern: Jondmoore.org/blog.html
+    icon-class: fab fa-2x fa-blog
