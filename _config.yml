@@ -35,7 +35,7 @@ medium:  'ReadReadRead19'
 email: 'readreadread19@gmail.com'
 #messenger: 'myfbchat'
 
-social-links-order: [twitter, youtube, medium, telegram, email]
+social-links-order: [twitter, youtube, medium, telegram, email, blog_url]
 
 # Yaml manifest of supported social links
 # Requirements:
@@ -147,7 +147,7 @@ social-links:
   #name: quora
    # url-pattern: www.quora.com/profile/__USERNAME__
 
-  #name: blog_url
+  - name: blog_url
    # url-pattern: '__USERNAME__'
     #icon-class: fas fa-2x fa-blog
 
@@ -156,6 +156,3 @@ social-links:
     url-pattern: '__USERNAME__'
     icon-class: far fa-2x fa-envelope-open
     
-  - name: Blog
-    url-pattern: Jondmoore.org/blog.html
-    icon-class: fab fa-2x fa-blog
