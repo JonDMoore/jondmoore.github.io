@@ -19,49 +19,14 @@ title: blog
         Theology
         Technology
     '>
-    <meta name='author' content='Gregory Gundersen'>
+    <meta name='author' content='Jonathon Moore'>
 
     <link rel='shortcut icon' href='/favicon.png?v=e' />
     <link href='/css/blog.css' rel='stylesheet'/>
 </head>
 <body>
     {% include nav.html %}
-    <div id='blog' class='wrap'>
-        <div id='intro'>
-            <div class='quote'>
-                <p>Profound Quote</p>
-                <a>Some Guy</a>
-            </div>
-        </div>
-        <div id='posts' class='section'>
-         <ul>
-  {%-for item in include.collection-%}
-    <li>
-    {%- if item.url -%}
-      <a href="{{ item.url }}">{{ item.title }}</a>
-    {%- else -%}
-      {{ item.title }}
-    {%- endif -%}
-    </li>
-
-    {%-if item.post_list-%}
-      {%
-        include post_list.html
-          category=item.post_list.category
-          limit=item.post_list.limit
-          show_more=item.post_list.show_more
-          show_more_text=item.post_list.show_more_text
-          show_more_url=item.post_list.show_more_url
-     -%}
-    {%-endif-%}
-
-    {%-if item.entries-%}
-      {%-include menu_item.html collection=item.entries-%}
-    {%-endif-%}
-  {%-endfor-%}
-</ul>
-        </div>
-    </div>
+    {%-include menu_item.html collection=site.data.menu.entries-%}
     <div class='footer'> Theme by:<a href="https://github.com/gwgundersen">Gary Gundersen</a></div>
 </body>
 </html>
