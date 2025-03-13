@@ -211,3 +211,8 @@ hr {
     margin: 0 7px;
   }
 }
+.footer {
+	position:fixed;
+	bottom:0;
+	left:0;
+}
