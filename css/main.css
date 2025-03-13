@@ -71,10 +71,7 @@ h1 {
 	display: inline;
 	padding-right: 10px;
 }
-#footer {
-    position:fixed;
-    bottom:0;
-}
+
 .nav {
 	margin-top: 15px;
 	margin-bottom: 15px;
@@ -97,4 +94,7 @@ h1 {
 	display: inline;
 	margin-right: 10px;
 	line-height: 1.5em;
+}
+.footer, .push {
+    height: 4em;
 }
