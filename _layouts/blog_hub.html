@@ -33,10 +33,9 @@ p { width: 50em;
   <ul>
   {% for post in site.posts %}
   <li>
-    
-<h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-<h5>{{page.date}}</h5>
-
+    {%- assign date_format = "%Y-%m-%d" -%}
+<title>[ {{ post.date | date: date_format }} ]<a href="{{ post.url | relative_url }}">{{ post.title }}</a></title>
+      
 <p>{{ post.excerpt }}</p>
 
 <a href={{ post.url }}> [Read More] </a>
