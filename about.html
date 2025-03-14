@@ -1,5 +1,6 @@
 ---
 title: About
+layout: page
 ---
 
 <html>
@@ -26,30 +27,8 @@ title: About
 </head>
 <body>
     {% include nav.html %}
-    <div id='blog' class='wrap'>
-        <div id='intro'>
-            <div class='quote'>
-                <p>Profound Quote</p>
-                <a>Some Guy</a>
-            </div>
-        </div>
-        <div id='posts' class='section'>
-            {% for post in site.posts %}
-                <div class='post-row'>
-                    <p class='post-title'>
-                        <a href="{{ post.url }}">
-                        </a>
-                    </p>
-                    <p class='post-date'>
-                        {{ post.date | date_to_long_string }}
-                    </p>
-                </div>
-                <p class='post-subtitle'>
-                </p>
-                <span class='hidden'>{{ forloop.index }}</span>
-            {% endfor %}
-        </div>
-    </div>
+   Im just a kid and life is a nightmare
+    
     <div class='footer'> Theme by:<a href="https://github.com/gwgundersen">Gary Gundersen</a></div>
 </body>
 </html>
