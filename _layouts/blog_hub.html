@@ -24,18 +24,15 @@
             <div class='clear'></div>
         </div>
     </div>
-    <div class='wrap article'>
-        {{ content }}
-    </div>
 </div>
   <ul>
   {% for post in site.posts %}
   <li>
     
 <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-<div class='byline'> <p>{{ page.date |  date: '%d %B %Y' }}</p> </div>
+{{ page.date |  date: '%d %B %Y' }}
 
-    {{ post.excerpt }}
+{{ post.excerpt }}
 
 <a href={{ post.url }}> [Read More] </a>
   </li>
