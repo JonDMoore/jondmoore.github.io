@@ -15,11 +15,13 @@
     
 </head>
 <body>
+    <div class='content'>
     {% include nav.html %}
     <div class='front-matter'>
         <div class='wrap'>
             <h1>{{ page.title }}</h1>
             <h4>{{ page.subtitle }}</h4>
+    </div>
     </div>
   <ul>
   {% for post in site.posts %}
@@ -34,6 +36,7 @@
   </li>
 {% endfor %}
 </ul>
+    </div>
 <div class='footer'> Theme by:<a href="https://github.com/gwgundersen">Gary Gundersen</a></div>
 </body>
 </html>
