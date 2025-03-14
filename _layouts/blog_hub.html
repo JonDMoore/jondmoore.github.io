@@ -34,7 +34,7 @@ p { width: 50em;
   {% for post in site.posts %}
   <li>
     {%- assign date_format = "%Y-%m-%d" -%}
-<title>[ {{ post.date | date: date_format }} ]<a href="{{ post.url | relative_url }}">{{ post.title }}</a></title>
+<h3>[ {{ post.date | date: date_format }} ]<a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
       
 <p>{{ post.excerpt }}</p>
 
