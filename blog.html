@@ -5,6 +5,7 @@ title: blog
 <ul>
   {% for post in site.posts %}
   <li>
+     <span>{{- post.date | date: site.theme_config.date_format -}}</span>
 <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
 
 {{ post.excerpt }}
