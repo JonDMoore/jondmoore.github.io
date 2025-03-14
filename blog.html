@@ -7,9 +7,9 @@ title: blog
   <li>
     
 <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-<h5>{{- post.date|date:"SHORT_DATE_FORMAT" -}}</h5>
-    
-{{ post.excerpt }}
+<div class='byline'> <p>{{ page.date |  date: '%d %B %Y' }}</p> </div>
+
+    {{ post.excerpt }}
 
 <a href={{ post.url }}> [Read More] </a>
   </li>
