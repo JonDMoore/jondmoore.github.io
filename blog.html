@@ -6,8 +6,9 @@ title: blog
   {% for post in site.posts %}
   <li>
     
-<h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a>- {{- post.date | date: site.theme_config.date_format -}}</h3>
-
+<h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+<h5>{{- post.date|date:"SHORT_DATE_FORMAT" -}}</h5>
+    
 {{ post.excerpt }}
 
 <a href={{ post.url }}> [Read More] </a>
