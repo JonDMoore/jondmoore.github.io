@@ -1,0 +1,14 @@
+<ul>
+  {% for post in site.posts %}
+  <li>
+    
+<h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+<div class='byline'> <p>{{ page.date |  date: '%d %B %Y' }}</p> </div>
+
+    {{ post.excerpt }}
+
+<a href={{ post.url }}> [Read More] </a>
+  </li>
+{% endfor %}
+</ul>
+<div class='footer'> Theme by:<a href="https://github.com/gwgundersen">Gary Gundersen</a></div>
