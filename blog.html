@@ -1,28 +1,13 @@
-<html><head>
-	<title>Jon D Moore</title>
-	<meta charset="UTF-8">
-	<meta content="width=device-width, initial-scale=1" name="viewport">
+---
+layout: default
+---
 
-	<meta name="description" content="Jonathon Moore is an LCMS-Lay Deacon in Summerville,SC">
-	<meta name="keywords" content="Lutheran,Theology,Linux">
-	<meta name="author" content="Jonathon Moore">
+{% for post in site.posts %}
 
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="shortcut icon" href="/favicon.png?v=e">
-</head>
-<body>
-<div>
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-      - <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
-    </li>
-  {% endfor %}
-</ul>
-</div>
- <div class='footer'> Theme by:<a href="https://github.com/gwgundersen">Gary Gundersen</a></div>
-</body>
-</html>
+# {{ post.title }}
+
+{{ post.excerpt }}
+
+[Read More]({{ post.url }})
+
+{% endfor %}
