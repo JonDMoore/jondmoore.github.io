@@ -1,32 +1,9 @@
 ---
-title: blog
+layout: default
 ---
 
-<html>
-<head>
-    <title>Jon D Moore</title>
-    <meta charset='UTF-8'>
-    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+{%-include back_link.html-%}
 
-    <meta name='description' content='Jonathon Moore is an LCMS Lay-Deacon.'>
-    <!-- A decent browser will parse this fine:
-         https://webmasters.stackexchange.com/questions/92744. -->
-    <meta name='keywords' content='
-        Linux
-        LCMS
-        Lutheran
-        Conservatism
-        Theology
-        Technology
-    '>
-    <meta name='author' content='Jonathon Moore'>
+<h1>{{ page.title }}</h1>
 
-    <link rel='shortcut icon' href='/favicon.png?v=e' />
-    <link href='/css/blog.css' rel='stylesheet'/>
-</head>
-<body>
-    {% include nav.html %}
-    {%-include menu_item.html collection=site.data.menu.entries-%}
-    <div class='footer'> Theme by:<a href="https://github.com/gwgundersen">Gary Gundersen</a></div>
-</body>
-</html>
+{%-include post_list.html category=page.which_category-%}
