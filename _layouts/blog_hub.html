@@ -1,4 +1,13 @@
 <html>
+<style>
+h1 {
+  text-align: left;
+}
+    
+h4 {
+  text-align: left;
+}
+</style>
 <head>
     <title>{{ page.title }}</title>
     <meta charset='UTF-8'>
@@ -29,7 +38,7 @@
   <li>
     
 <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-{{page.date}}
+<h5>{{page.date}}</h5>
 
 {{ post.excerpt }}
 
