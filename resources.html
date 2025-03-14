@@ -1,55 +1,36 @@
 ---
-title: resources
+title: Resources
 ---
-
 <html>
 <head>
-    <title>Jon D Moore</title>
+    <title>{{ page.title }}</title>
     <meta charset='UTF-8'>
     <meta content='width=device-width, initial-scale=1' name='viewport'/>
 
-    <meta name='description' content='Jonathon Moore is an LCMS Lay-Deacon.'>
-    <!-- A decent browser will parse this fine:
-         https://webmasters.stackexchange.com/questions/92744. -->
-    <meta name='keywords' content='
-        Linux
-        LCMS
-        Lutheran
-        Conservatism
-        Theology
-        Technology
-    '>
+    <meta name='description' content='Gregory Gundersen is a PhD candidate at Princeton.'>
+    <meta name='keywords' content='{{ page.keywords }}'>
     <meta name='author' content='Gregory Gundersen'>
 
-    <link rel='shortcut icon' href='/favicon.png?v=e' />
     <link href='/css/blog.css' rel='stylesheet'/>
+    <link href='/css/trac.css' rel='stylesheet'/>
+    <link href='/css/markdown.css' rel='stylesheet'/>
+
+    
 </head>
 <body>
+<div class='content'>
     {% include nav.html %}
-    <div id='blog' class='wrap'>
-        <div id='intro'>
-            <div class='quote'>
-                <p>Profound Quote</p>
-                <a>Some Guy</a>
-            </div>
-        </div>
-        <div id='posts' class='section'>
-            {% for post in site.posts %}
-                <div class='post-row'>
-                    <p class='post-title'>
-                        <a href="{{ post.url }}">
-                        </a>
-                    </p>
-                    <p class='post-date'>
-                        {{ post.date | date_to_long_string }}
-                    </p>
-                </div>
-                <p class='post-subtitle'>
-                </p>
-                <span class='hidden'>{{ forloop.index }}</span>
-            {% endfor %}
+    <div class='front-matter'>
+        <div class='wrap'>
+            <h1>{{ page.title }}</h1>
+            <h4>{{ page.subtitle }}</h4>
+            <div class='clear'></div>
         </div>
     </div>
+    
+  <div class='wrap article'> Resources will go here. </div>
+    
     <div class='footer'> Theme by:<a href="https://github.com/gwgundersen">Gary Gundersen</a></div>
 </body>
+</div>
 </html>
