@@ -4,6 +4,8 @@
 	font-size: 15px;
 	margin: 7px;
 	padding: 0;
+	max-width: 100%;
+  	overflow-x: hidden;
 }
 a {
 	color: rgba(0, 0, 0, 0.8);
