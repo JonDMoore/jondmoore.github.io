@@ -8,6 +8,8 @@ html {
 }
 body {
   margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 body .content {
   margin-bottom: 120px;
