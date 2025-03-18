@@ -9,13 +9,11 @@ html {
 body {
   margin: 0;
   max-width: 100%;
-  overflow-x: hidden;
   position: relative;
 }
 body .content {
   margin-bottom: 120px;
   max-width: 100%;
-  overflow-x: hidden;
   position: relative;
 }
 a {
