@@ -1,11 +1,13 @@
 <html>
 <style>
 h1 {text-align: left;}    
-h4 {text-align: left;}
+h3 {text-align: center;}
 p { width: 50em;
     margin: 2px;
   max-width:100%;
-  margin-right: 5px;}
+  margin-right: 5px;
+  text-align: center;
+  }
 
 </style>
 <head>
@@ -41,7 +43,7 @@ p { width: 50em;
     {%- assign date_format = "%Y-%m-%d" -%}
 <h3>[ {{ post.date | date: date_format }} ] - <a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
       
-<p class='blog'>{{ post.excerpt }}</p>
+<p>{{ post.excerpt }}</p>
 
 <a href={{ post.url }}> [Read More] </a>
   </li>
