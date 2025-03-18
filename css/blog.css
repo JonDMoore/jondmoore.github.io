@@ -144,6 +144,9 @@ h1 {
   margin: 33px auto;
   width: 70px;
 }
+.blog li {
+	max-width: 100%;
+}
 #bibliography {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
