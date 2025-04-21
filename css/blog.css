@@ -17,8 +17,6 @@ body {
   margin: 0;
   max-width: 100%;
   position: relative;
-  border-style: double;
-  padding: 50px;
 }
 body .content {
   margin-bottom: 120px;
@@ -154,6 +152,8 @@ h1 {
 }
 .article ul {
   padding: 0 15px;
+  border-style: double;
+  padding: 40px;
 }
 .article hr {
   border-bottom: none;
