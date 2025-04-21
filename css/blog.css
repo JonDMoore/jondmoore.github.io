@@ -113,7 +113,7 @@ h1 {
   margin-top: 50px;
   margin-bottom: 50px;
   border-style: double;
-  padding: 15px;
+  padding: 40px;
 }
 .article blockquote {
   margin: 0;
@@ -162,7 +162,7 @@ h1 {
 .blog p {
 	max-width: 100%;
 	border-style: double;
-	padding: 15px;
+	padding: 40px;
 }
 #bibliography {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
