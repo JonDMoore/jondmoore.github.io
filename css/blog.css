@@ -17,6 +17,8 @@ body {
   margin: 0;
   max-width: 100%;
   position: relative;
+  border-style: double;
+  padding: 50px;
 }
 body .content {
   margin-bottom: 120px;
