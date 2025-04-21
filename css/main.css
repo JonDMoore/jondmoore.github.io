@@ -1,6 +1,6 @@
  body {
 	color: rgba(0, 0, 0, 0.8);
-	font-family: -apple-system, Helvetica, arial, sans-serif;
+	font-family: American Typewriter, serif;
 	font-size: 15px;
 	margin: 7px;
 	padding: 0;
@@ -26,7 +26,7 @@ h1 {
 	margin: 0 0 20px 0;
 }
 #landing ul#links li {
-	font-family: -apple-system, helvetica, arial, sans-serif;
+	font-family: American Typewriter, serif;
 	margin-right: 25px;
 	padding-bottom: 5px;
 }
@@ -34,7 +34,7 @@ h1 {
 	text-decoration: none;
 }
 #landing ul#links li#contact {
-	font-family: courier;
+	font-family: American Typewriter, serif;
 	margin: 0;
 	padding-top: 5px;
 }
