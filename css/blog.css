@@ -1,5 +1,5 @@
 html {
-  font-family: -apple-system, Helvetica, arial, sans-serif;
+  font-family: American Typewriter, serif;
   color: rgba(0, 0, 0, 0.8);
   line-height: 1.5em;
   -ms-text-size-adjust: 100%;
@@ -35,7 +35,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: -apple-system, Helvetica, arial, sans-serif;
+  font-family: American Typewriter, serif;
 }
 h1 {
   line-height: 1.2em;
@@ -57,7 +57,7 @@ h1 {
   margin: 0 auto;
 }
 .mono {
-  font-family: monospace;
+  font-family: American Typewriter, serif;
 }
 .nav {
   margin-top: 15px;
@@ -86,7 +86,7 @@ h1 {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .front-matter h4 {
-  font-family: -apple-system, Helvetica, arial, sans-serif;
+  font-family: American Typewriter, serif;
 }
 .front-matter .bylines .byline {
   margin-right: 20px;
@@ -95,7 +95,7 @@ h1 {
 .front-matter .bylines .byline h3,
 .front-matter .bylines .byline p {
   margin: 0;
-  font-family: -apple-system, Helvetica, arial, sans-serif;
+  font-family: American Typewriter, serif;
 }
 .front-matter .bylines .byline h3 {
   font-size: 9px;
